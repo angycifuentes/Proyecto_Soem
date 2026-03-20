@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<title>SOEM_Oficial</title>
+
+<link rel="stylesheet" href="./assets/css/Style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>SOEM_Oficial</h1>
+
+<input type="text" id="buscador" placeholder="Buscar ropa...">
+
+<div class="acciones">
+
+<button onclick="modoOscuro()">🌙</button>
+
+<button onclick="toggleCarrito()">
+🛒 <span id="contador">0</span>
+</button>
+
+</div>
+
+</header>
+
+<nav class="categorias">
+
+<button onclick="filtrar('todo')">Todo</button>
+<button onclick="filtrar('camisetas')">Camisetas</button>
+<button onclick="filtrar('hoodies')">Hoodies</button>
+<button onclick="filtrar('pantalones')">Pantalones</button>
+
+</nav>
+
+<section id="productos" class="productos"></section>
+
+<div id="carrito" class="carrito">
+
+<h2>Tu carrito</h2>
+
+<div id="lista"></div>
+
+<h3>Total: $<span id="total">0</span></h3>
+
+<a href="checkout.html">
+<button class="pagar">Pagar</button>
+</a>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

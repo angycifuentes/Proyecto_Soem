@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Unidades</title>
+    <link rel="stylesheet" href="./assets/css/Style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Control de Unidades</h2>
+        <form action="#" method="POST">
+            
+            <div class="form-group">
+                <label for="tipo">Tipo de Unidad</label>
+                <input type="text" id="tipo" name="tipo" maxlength="45" placeholder="Ej: Caja, Litro, Unidad" required>
+            </div>
+
+            <div class="form-group">
+                <label for="stockactual">Stock Actual</label>
+                <input type="text" id="stockactual" name="stockactual" maxlength="45" placeholder="Cantidad disponible" required>
+            </div>
+
+            <div class="form-group">
+                <label for="stockminimo">Stock Mínimo</label>
+                <input type="text" id="stockminimo" name="stockminimo" maxlength="45" placeholder="Alerta de reabastecimiento" required>
+            </div>
+
+            <div class="form-group">
+                <label for="producto_id">ID del Producto Asociado</label>
+                <input type="number" id="producto_id" name="producto_id" placeholder="Ingrese el código del producto" required>
+            </div>
+
+            <button type="submit" class="btn-submit">Guardar Unidad</button>
+        </form>
+    </div>
+
+</body>
+</html>

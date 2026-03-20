@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Categoría - DB Style</title>
+    <link rel="stylesheet" href="./assets/css/Style.css">
+</head>
+<body>
+
+    <div class="db-card">
+        <div class="db-header">
+            <div class="db-icon"></div>
+            <span>Categoria</span>
+        </div>
+
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label>
+                    Nombre de categoria
+                </label>
+                <input type="number" name="nombredecategoria" placeholder="ID de categoría" required>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    Descripcion
+                </label>
+                <textarea maxlength="45" name="descripcion" placeholder="Escribe la descripción..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label> 
+                    Portada 
+                </label>
+                <input type="text" maxlength="45" name="portada" placeholder="Ruta de la imagen o nombre">
+            </div>
+
+            <div class="form-group">
+                <label>
+                    Categoria genero
+                </label>
+                <input type="text" maxlength="45" name="categoriagenero" placeholder="Definir género">
+            </div>
+
+            <div class="form-group">
+                <label> 
+                    Id de producto
+                </label>
+                <input type="number" name="producto_id" placeholder="ID Producto Relacionado" required>
+            </div>
+
+            <button type="submit" class="btn-save">Guardar en Base de Datos</button>
+        </form>
+
+        <div class="db-footer">
+        </div>
+    </div>
+
+</body>
+</html>

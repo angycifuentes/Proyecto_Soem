@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generar Factura</title>
+    <link rel="stylesheet" href="./assets/css/Style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Nueva Factura</h2>
+        <form action="#" method="POST">
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" maxlength="45" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" maxlength="45" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="documento">Documento / Identificación</label>
+                <input type="text" id="documento" name="documento" maxlength="45" required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" maxlength="45">
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" name="correo" maxlength="45">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="direccion">Dirección de Envío</label>
+                <input type="text" id="direccion" name="direccion" maxlength="45">
+            </div>
+
+            <div class="form-group">
+                <label for="id_pago">ID de Pago Relacionado</label>
+                <input type="number" id="id_pago" name="id_pago" required>
+            </div>
+
+            <button type="submit" class="btn-submit">Generar Factura</button>
+        </form>
+    </div>
+
+</body>
+</html>
